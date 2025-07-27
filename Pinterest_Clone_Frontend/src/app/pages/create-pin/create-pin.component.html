@@ -1,0 +1,90 @@
+<div class="create-pin-wrapper">
+  <div class="upload-box">
+    <label for="fileUpload" class="upload-label">
+      <ng-container *ngIf="!previewUrl">
+        <p class="upload-text">
+          Upload your image<br />
+          <span>Only PNG, JPG, JPEG supported</span>
+        </p>
+      </ng-container>
+      <img *ngIf="previewUrl" [src]="previewUrl" class="preview-image" />
+      <input type="file" id="fileUpload" hidden (change)="onFileSelected($event)" />
+    </label>
+  </div>
+
+  <form class="pin-form" [formGroup]="pinForm">
+    <div class="form-header">
+      <button type="button" class="publish-button" (click)="onPublish()">Publish</button>
+    </div>
+
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input
+        id="title"
+        type="text"
+        placeholder="Add a title"
+        class="pin-input"
+        formControlName="title"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea
+        id="description"
+        placeholder="Add a detailed description"
+        class="pin-textarea"
+        formControlName="description"
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="link">Link</label>
+      <input
+        id="link"
+        type="text"
+        placeholder="Add a link"
+        class="pin-input"
+        formControlName="link"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="board">Board</label>
+      <select id="board" class="pin-select" formControlName="board">
+        <option disabled selected>Choose a board</option>
+        <!-- Add board options here later -->
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="tags">Tagged Topics</label>
+      <input
+        id="tags"
+        type="text"
+        placeholder="Search for a tag"
+        class="pin-input"
+        formControlName="tags"
+      />
+    </div>
+
+    <div class="form-group toggle-group">
+      <label class="switch">
+        <input type="checkbox" formControlName="allow_comments" />
+        <span class="slider round"></span>
+      </label>
+      <span>Allow people to comment</span>
+    </div>
+
+    <div class="form-group">
+      <label for="altText">Alt Text</label>
+      <input
+        id="altText"
+        type="text"
+        placeholder="Describe your Pin’s visual details"
+        class="pin-input"
+        formControlName="alt_text"
+      />
+    </div>
+  </form>
+</div>

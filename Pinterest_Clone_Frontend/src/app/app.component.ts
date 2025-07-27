@@ -3,10 +3,8 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
   imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.sass'
+  templateUrl: './app.component.html'
 })
-export class AppComponent {
-  title = 'Pinterest_Clone_Frontend';
-}
+export class AppComponent {}
