@@ -1,0 +1,68 @@
+
+<div class="modal-overlay">
+  <div class="modal-window">
+    <h2 class="modal-title">Create board</h2>
+    <form class="modal-form">
+      <label class="modal-label" for="boardName">Name</label>
+      <input id="boardName" class="modal-input" type="text" placeholder="Like 'Places to Go' or 'Recipes to Make'" />
+      <div class="modal-secret">
+        <label for="secretCheckbox" class="modal-checkbox-label">
+          <input id="secretCheckbox" type="checkbox" class="modal-checkbox" />
+          Keep this board secret
+        </label>
+        <span class="modal-secret-desc">So only you and collaborators can see it. <a href="#" class="modal-learn-more">Learn more</a></span>
+      </div>
+      <div class="modal-collaborators">
+        <label class="modal-label" for="collaborators">Add collaborators</label>
+        <div class="modal-collab-search-wrapper">
+          <span class="modal-search-icon">🔍</span>
+          <input id="collaborators" class="modal-input" type="text" placeholder="Search by name or email" />
+          <button class="modal-clear-btn" type="button">✕</button>
+        </div>
+        <ul class="modal-collab-list">
+          <li class="modal-collab-item">
+            <img class="modal-collab-avatar" src="https://randomuser.me/api/portraits/men/1.jpg" alt="avatar" />
+            <div class="modal-collab-info">
+              <span class="modal-collab-name">Alexander Saltanov</span>
+              <span class="modal-collab-username">&#64;asd</span>
+            </div>
+            <button class="modal-collab-add">Add</button>
+          </li>
+          <li class="modal-collab-item">
+            <img class="modal-collab-avatar" src="https://randomuser.me/api/portraits/men/2.jpg" alt="avatar" />
+            <div class="modal-collab-info">
+              <span class="modal-collab-name">Asda</span>
+              <span class="modal-collab-username">&#64;asda</span>
+            </div>
+            <button class="modal-collab-add">Add</button>
+          </li>
+          <li class="modal-collab-item">
+            <img class="modal-collab-avatar" src="https://randomuser.me/api/portraits/women/1.jpg" alt="avatar" />
+            <div class="modal-collab-info">
+              <span class="modal-collab-name">A.</span>
+              <span class="modal-collab-username">&#64;asdaasdaasda44</span>
+            </div>
+            <button class="modal-collab-add">Add</button>
+          </li>
+          <li class="modal-collab-item">
+            <img class="modal-collab-avatar" src="https://randomuser.me/api/portraits/men/3.jpg" alt="avatar" />
+            <div class="modal-collab-info">
+              <span class="modal-collab-name">George at Asda</span>
+              <span class="modal-collab-username">&#64;georgeatasda</span>
+            </div>
+            <button class="modal-collab-add">Add</button>
+          </li>
+          <li class="modal-collab-item">
+            <img class="modal-collab-avatar" src="https://randomuser.me/api/portraits/women/2.jpg" alt="avatar" />
+            <div class="modal-collab-info">
+              <span class="modal-collab-name">ASD DIY</span>
+              <span class="modal-collab-username">&#64;0netpvbreiaymh4e0vgmnokxf762uv</span>
+            </div>
+            <button class="modal-collab-add">Add</button>
+          </li>
+        </ul>
+      </div>
+      <button class="modal-create-btn" type="submit" disabled>Create</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,175 @@
+.modal-overlay
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+  background: rgba(0,0,0,0.5)
+  display: flex
+  align-items: center
+  justify-content: center
+  z-index: 1000
+
+.modal-window
+  background: #fff
+  border-radius: 18px
+  box-shadow: 0 4px 32px rgba(0,0,0,0.18)
+  width: 420px
+  max-width: 95vw
+  padding: 32px 32px 24px 32px
+  display: flex
+  flex-direction: column
+  align-items: stretch
+
+.modal-title
+  font-size: 1.5rem
+  font-weight: 600
+  margin-bottom: 24px
+  text-align: left
+
+.modal-form
+  display: flex
+  flex-direction: column
+  gap: 18px
+
+.modal-label
+  font-size: 0.95rem
+  font-weight: 500
+  margin-bottom: 6px
+  color: #111
+
+.modal-input
+  width: 100%
+  padding: 12px 0
+  border: 1.5px solid #ccc
+  border-radius: 12px
+  font-size: 1rem
+  outline: none
+  transition: border 0.2s
+  &:focus
+    border: 1.5px solid #e60023
+
+.modal-secret
+  display: flex
+  flex-direction: column
+  gap: 8px
+  margin-bottom: 8px
+
+.modal-checkbox-label
+  display: flex
+  align-items: center
+  font-size: 1rem
+  cursor: pointer
+  user-select: none
+
+.modal-checkbox
+  accent-color: #e60023
+  width: 18px
+  height: 18px
+  margin-right: 8px
+
+.modal-secret-desc
+  font-size: 0.92rem
+  color: #767676
+  margin-left: 26px
+  margin-top: 0
+
+.modal-learn-more
+  color: #0073e6
+  text-decoration: underline
+  cursor: pointer
+
+.modal-collaborators
+  margin-top: 8px
+
+.modal-collab-search-wrapper
+  display: flex
+  align-items: center
+  background: #f1f1f1
+  border-radius: 12px
+  padding: 0 8px
+  margin-bottom: 8px
+
+.modal-search-icon
+  font-size: 1.1rem
+  color: #767676
+  margin-right: 4px
+
+.modal-clear-btn
+  background: none
+  border: none
+  font-size: 1.2rem
+  color: #767676
+  cursor: pointer
+  margin-left: 4px
+  outline: none
+
+.modal-collab-list
+  list-style: none
+  padding: 0
+  margin: 0
+  max-height: 180px
+  overflow-y: auto
+
+.modal-collab-item
+  display: flex
+  align-items: center
+  padding: 8px 0
+  border-bottom: 1px solid #f0f0f0
+  &:last-child
+    border-bottom: none
+
+.modal-collab-avatar
+  width: 40px
+  height: 40px
+  border-radius: 50%
+  object-fit: cover
+  margin-right: 12px
+  border: 1.5px solid #eee
+
+.modal-collab-info
+  flex: 1
+  display: flex
+  flex-direction: column
+  gap: 2px
+
+.modal-collab-name
+  font-size: 1rem
+  font-weight: 500
+  color: #222
+
+.modal-collab-username
+  font-size: 0.92rem
+  color: #767676
+
+.modal-collab-add
+  background: #e60023
+  color: #fff
+  border: none
+  border-radius: 18px
+  padding: 6px 18px
+  font-size: 1rem
+  font-weight: 500
+  cursor: pointer
+  transition: background 0.2s
+  &:hover
+    background: #ad081b
+
+.modal-create-btn
+  margin-top: 18px
+  width: 100%
+  background: #e60023
+  color: #fff
+  border: none
+  border-radius: 18px
+  padding: 12px 0
+  font-size: 1.1rem
+  font-weight: 600
+  cursor: pointer
+  transition: background 0.2s
+  &:disabled
+    background: #f1b2b8
+    color: #fff
+    cursor: not-allowed
+  &:not(:disabled):hover
+    background: #ad081b

@@ -1,0 +1,29 @@
+.pin-board
+  column-count: 4
+  column-gap: 1.5rem
+  padding-inline: 3rem
+  margin-top: 2rem
+
+  @media (max-width: 1200px)
+    column-count: 3
+
+  @media (max-width: 900px)
+    column-count: 2
+
+  @media (max-width: 600px)
+    column-count: 1
+
+.pin-card
+  display: inline-block
+  width: 100%
+  margin-bottom: 1.5rem
+  border-radius: 12px
+  overflow: hidden
+  background: #fff
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1)
+
+.pin-image
+  width: 100%
+  height: auto
+  display: block
+  border-radius: 12px
