@@ -1,0 +1,6 @@
+<div class="pin-board">
+  <div class="pin-card" *ngFor="let pin of pins">
+    <img [src]="pin.imageUrl" [alt]="pin.altText || pin.title" class="pin-image" />
+    <!-- <div class="pin-title">{{ pin.title }}</div> -->
+  </div>
+</div>
